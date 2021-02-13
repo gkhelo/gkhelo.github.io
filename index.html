@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="desctiption" content="football live scores, football leagues">
+        <meta name="keywords" content="football, scores, leagues">
+        
+        <title>Random Scores</title>
+
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/popup.css">
+        <link rel="stylesheet" href="./css/collapsible.css">
+        <link rel="stylesheet" href="./css/match.css">
+        <link rel="stylesheet" href="./css/standing.css">
+        <link rel="stylesheet" href="./css/matchesfilter.css">
+        <link rel="stylesheet" href="./css/calendar.css">
+        <link rel="stylesheet" href="./css/teaminfo.css">
+        <link rel="stylesheet" href="./css/notification.css">
+
+        <script type="module" src="./js/main.js"></script>
+        <script type="module" src="./js/time.js"></script>
+        <script type="module" src="./js/render.js"></script>
+        <script type="module" src="./js/initializer.js"></script>
+        <script type="module" src="./js/simulator.js"></script>
+
+        <script type="module" src="./js/slideshow.js"></script>
+        <script type="module" src="./js/notification.js"></script>
+        <script type="module" src="./js/matchesfilter.js"></script>
+
+
+        <script src="./js/server.js"></script>
+        <script src="./js/popup.js"></script>
+        <script src="./js/collapsible.js"></script>
+        <script src="./js/match.js"></script>
+        <script src="./js/standings.js"></script>
+        <script src="./js/team.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="branding">
+                    <h1><a href="#"><span class="highlight">Random</span> Scores</a></h1>
+                </div>
+                <div class="tools">
+                    <div class="search-box">
+                        <input class="search-input" type="text" maxlength="30" placeholder="Enter team name..." id="search-input">
+                        <img src="./images/search.png" class="search-button" id="search-button" />
+                    </div>
+                    <div class="notifications">
+                        <div class="notifications-button" id="notifications-button">
+                            <img src="./images/ball.png"/>
+                            <div class="notifications-count" id="notifications-count"></div>
+                        </div>
+
+                        <div class="notifications-content" id="notifications-content"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="slideshow" id="slideshow"></div>
+
+            <div class="grid">
+                <div class="matches" id="matches"></div>
+
+                <div class="standings" id="standings"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="system-time">
+                        <div class="system-time-title">System time</div>
+                        <div class="system-time-info" id="system-time">Day 1 - 00:00</div>
+                    </div>
+
+                    <div class="site">
+                        <div class="site-title">RandomScores.com</div>
+                        <div class="site-info">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/gkhelo/random-score" target="_blank">
+                                        GitHub Repo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

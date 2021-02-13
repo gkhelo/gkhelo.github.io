@@ -1,0 +1,50 @@
+.matches-filter {
+    display: flex;
+    flex-flow: row nowrap;
+    
+    background: #eee;
+}
+
+.status-filter {
+    display: flex;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+    width: 80%;
+    overflow: auto;
+}
+
+.status-filter ul {
+    padding: 5px;
+}
+
+.status-filter li {
+    display: inline;
+    padding: 0 25px
+}
+
+.status-filter li label {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.day-filter {
+    position: relative;
+    width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    .matches-filter {
+        flex-flow: column nowrap;
+        text-align: center;
+        align-items: center;
+    }
+
+    .status-filter {
+        width: 60%;
+    }
+
+    .day-filter {
+        width: 80%;
+    }
+}
